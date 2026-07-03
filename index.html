@@ -1,45 +1,4 @@
-Looking at your code, I need to fix:
-1. The franchise section text alignment and spacing
-2. Add padding between the text and the franchise image
-3. Use `logo.png` in the navbar and footer logo spaces
 
-Here are the specific fixes:
-
-```css
-/* Fix franchise text centering - ensure these rules are applied */
-.franchise-section {
-  background: var(--green-pale);
-  text-align: center;
-  padding: 96px 72px;
-}
-
-.franchise-section .section-sub {
-  margin: 0 auto;  /* This centers the text block */
-  max-width: 600px;
-}
-
-.franchise-image {
-  margin-top: 48px; /* Add padding between text and image */
-}
-```
-
-And for the logo, replace the SVG icon divs with:
-
-```html
-<!-- In navbar -->
-<div class="nav-logo-icon">
-  <img src="logo.png" alt="Lucien Academy Logo" style="width:38px;height:38px;border-radius:10px;object-fit:cover;">
-</div>
-
-<!-- In footer -->
-<div class="footer-logo-icon">
-  <img src="logo.png" alt="Lucien Academy Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;">
-</div>
-```
-
-Here is the **complete updated file** with all fixes applied:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1647,4 +1606,3 @@ Here is the **complete updated file** with all fixes applied:
 </script>
 </body>
 </html>
-```
